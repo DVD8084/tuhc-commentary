@@ -44,17 +44,17 @@ for record in commentary:
             pageid = f"{int(pageid):06}"
 
             if pc := page.get("commentary"):
-                andrew_footnotes['story'][pageid] = [{"content": pc}]
+                andrew_footnotes['story'][pageid] = [{"content": pc.replace('\n', '<br>')}]
 
             if mn := page.get("notes"):
                 if match := re.match(r'([A-Za-z]+[A-Za-z ][A-Za-z]+): (.+)', mn):
                     author, content = match.groups()
                     archivist_notes['story'][pageid] = [{
                         "author": author,
-                        "content": content
+                        "content": content.replace('\n', '<br>')
                     }]
                 else:
-                    archivist_notes['story'][pageid] = [{"content": mn}]
+                    archivist_notes['story'][pageid] = [{"content": mn.replace('\n', '<br>')}]
         except:
             print(page)
             raise
@@ -67,5 +67,5 @@ footnoteCollection = [
 with open("footnotes.js", "w", encoding="utf-8") as fp:
     fp.write("\nstory_archivist = ")
     fp.write(json.dumps(archivist_notes['story'], ensure_ascii=False, indent=2))
-    fp.write("story_author = ")
+    fp.write("\nstory_author = ")
     fp.write(json.dumps(andrew_footnotes['story'], ensure_ascii=False, indent=2))
