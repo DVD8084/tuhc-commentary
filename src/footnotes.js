@@ -143,7 +143,7 @@ story_archivist = {
       "content": "These two pages are absent from the book, for some reason."
     }
   ],
-  "001722": [
+  "001723": [
     {
       "author": "Makin",
       "content": "And here it is: https://www.instagram.com/p/BgJqofOHoV1/?taken-by=teacupscosplay"
@@ -12356,7 +12356,7 @@ story_author = {
       "content": "I wonder how Hawking would react to this page. He probably wouldn't. Because of the Parkinson's. Also because he wouldn't care."
     }
   ],
-  "001722": [
+  "001723": [
     {
       "content": "I know of at least one person in the universe who has cosplayed the Demimonde Demigodess. You would think with the hundreds of characters I create it would be impossible to cosplay all of them. But people are trying their damndest."
     }
