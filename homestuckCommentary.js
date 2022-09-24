@@ -8063,7 +8063,7 @@ story_author = {
   ],
   "005176": [
     {
-      "content": "\"A low but friendly growl unsettles your slumber.\" they detect a sharp pair of ears cutting moonlight.\""
+      "content": "\"A low but friendly growl unsettles your slumber.\""
     }
   ],
   "005177": [
